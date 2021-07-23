@@ -25,3 +25,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+
+packages ..
+server folder
+Client
+
+    axios--npm package. --  "proxy": "http://localhost:3001",
+
+    react
