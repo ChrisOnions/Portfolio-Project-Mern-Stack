@@ -1,8 +1,9 @@
 const { Schema, model } = require('mongoose');
 
-const listingSchema = new schema(
+
+const listingSchema = new Schema(
   {
-    number: {
+    houseNumber: {
       type: Number,
       required: true,
       trim: true
@@ -26,6 +27,19 @@ const listingSchema = new schema(
       type: String,
       required: true,
       trim: true
+    },
+    price: {
+      type: Number,
+      required: true,
+      trim: true
+    },
+    forSale: {
+      type: Boolean,
+    },
+    createdAt: {
+      type: Date,
+      default: Date.now,
+      get: (timestamp) => dateFormat(timestamp),
     },
   }
 )
