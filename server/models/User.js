@@ -11,12 +11,12 @@ const userSchema = new Schema(
     firstName: {
       type: String,
       required: true,
-      trim: true
+      trim: true,
     },
     lastName: {
       type: String,
       required: true,
-      trim: true
+      trim: true,
     },
     email: {
       type: String,
@@ -27,18 +27,16 @@ const userSchema = new Schema(
     password: {
       type: String,
       required: true,
-      minlength: 8
+      minlength: 8,
     },
-    createdAt: String
+    createdAt: {
+      type: Date,
+      default: Date.now,
+      get: (timestamp) => dateFormat(timestamp),
+    },
   },
-  // set this to use virtual below
-  // {
-  //   toJSON: {
-  //     virtuals: true,
-  //   },
-  // }
 );
-// Hash pasworrd before storing it in DB
+
 userSchema.pre('save', async function (next) {
   if (this.isNew || this.isModified('password')) {
     // With "salt round" they actually mean the cost factor. The cost factor controls how much time is needed to calculate a single BCrypt hash
