@@ -1,5 +1,7 @@
 # Mern Stack Setup
 
+## Git init
+
 - echo "# Portfolio-Project-Mern-Stack" >> README.md
 - git init
 - git add README.md
@@ -10,26 +12,69 @@
 
 ---
 
+## Create app
+
 - npx create-react-app mern-stack-portfolio-project
 - cd mern-stack-portfolio-project
 - npm start
-
----
-
 - Delete Source object
--
+
+## init npm
+
+-- npm init
+
+## Dependencies
+
+## front end
+
+- npm install react-router-dom --save
+
+## backened
+
+- express mongoose dotenv
+
+- concurrently
+- bcrypt
+- jsonwebtoken
+
+with apollo/graph use graphql apollo-server-express
 
 # Scripts
 
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+## concurently run .
 
-packages ..
-server folder
-Client
+```json
+   "start": "node server/server.js",
+   "develop": "concurrently \"cd server && npm run watch\" \"cd client &&  npm start\"",
+   "install": "cd server && npm i && cd ../client && npm i",
+   "seed": "cd server && npm run seed",
+   "build": "cd client && npm run build"
+```
 
-    axios--npm package. --  "proxy": "http://localhost:3001",
+## client
 
-    react
+```json
+   "start": "react-scripts start",
+   "build": "react-scripts build",
+   "test": "react-scripts test",
+   "eject": "react-scripts eject"
+```
+
+## Server
+
+```json
+   "start": "node server.js",
+   "watch": "nodemon server.js"
+```
+
+# Folder Structure
+
+- app
+
+  - Client
+    - react-app
+  - Server
+
+  axios--npm package. -- "proxy": "http://localhost:3001",
+
+  react
