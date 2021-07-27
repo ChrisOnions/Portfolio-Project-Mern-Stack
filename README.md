@@ -78,3 +78,20 @@ with apollo/graph use graphql apollo-server-express
   axios--npm package. -- "proxy": "http://localhost:3001",
 
   react
+
+<!--
+Create user login with all the trimmings
+Make home look pretty
+
+Signup page
+Login page
+Logout page
+Auth
+
+
+
+Create Listings backend
+
+// const stripe = require('stripe') for donations
+// ('sk_test_4eC39HqLyjWDarjtT1zdp7dc'); test
+ -->
