@@ -34,6 +34,12 @@ const userSchema = new Schema(
       default: Date.now,
       get: (timestamp) => dateFormat(timestamp),
     },
+    listing: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: 'Listing'
+      }
+    ]
   },
 );
 

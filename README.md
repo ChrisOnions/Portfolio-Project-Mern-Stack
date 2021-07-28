@@ -88,10 +88,9 @@ Login page
 Logout page
 Auth
 
-
-
 Create Listings backend
 
+seed for listings
 // const stripe = require('stripe') for donations
 // ('sk_test_4eC39HqLyjWDarjtT1zdp7dc'); test
  -->
