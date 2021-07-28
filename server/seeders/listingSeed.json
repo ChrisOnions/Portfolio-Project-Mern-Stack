@@ -1,0 +1,11 @@
+[
+  {
+    "houseNumber": "3",
+    "streetName": "Wilma",
+    "suburb": "Dandenong",
+    "city": "Melbourne",
+    "country": "Australia",
+    "price": "300000",
+    "forSale": "true"
+  }
+]
