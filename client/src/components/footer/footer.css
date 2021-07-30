@@ -1,0 +1,8 @@
+footer {
+  position: fixed;
+  bottom: 0; /* Stay in place */
+  text-align: center;
+  width: 100%;
+  color: var(--White-text);
+  background-color: var(--header-footer-color);
+}

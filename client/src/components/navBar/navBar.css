@@ -1,0 +1,47 @@
+* {
+  /* border: 1px solid black; */
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.headerContainer {
+  min-height: 60px;
+  background-color: var(--header-footer-color);
+  color: var(--White-text);
+}
+.iconContainer {
+  color: var(--White-text);
+  text-decoration: none;
+  width: 100%;
+  padding: 10px 0;
+}
+.iconManagement {
+  font-weight: bold;
+  size: 150%;
+  letter-spacing: 3px;
+}
+.MuiButton-label {
+  color: var(--White-text);
+  transition-duration: 0.4s;
+}
+.buttonNav {
+  background-color: var(--article-color1);
+  border-radius: 10px;
+  padding: 5px 15px;
+  color: white;
+  border: none;
+  margin: 18px;
+  text-decoration: none;
+}
+
+.iconLogo {
+  height: 50px;
+}
+
+.align-center {
+  align-items: center;
+}
