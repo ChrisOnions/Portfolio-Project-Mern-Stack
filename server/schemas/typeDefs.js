@@ -22,6 +22,16 @@ const typeDefs = gql`
     forSale: Boolean
     createdAt: String
   },
+
+  type WorkOrder {
+    _id: ID!
+    user: User!
+    date: String!
+    problem: String!
+    statusOpen: Boolean
+    handledBy: String
+    workerComments: String
+  }
   type Auth {
     token: ID!
     user: User
@@ -30,11 +40,18 @@ const typeDefs = gql`
   type Query {
     getUsers: [User]
     getlistings: [Listing]
+    getWorkOrder: [WorkOrder]
   },
   
   type Mutation {
     addUser(firstName: String!,lastName: String!,email:String!,password: String!,): Auth
+
     updateUser(firstName: String, lastName: String, email: String, password: String): User
+
+    addWorkOrder(user: User, date: String ,problem: String)
+
+    updateWorkOrder(statusOpen: Boolean, handledBy: String, workerComments: String)
+
     login(email: String!,password: String!): Auth
   }
 `;
