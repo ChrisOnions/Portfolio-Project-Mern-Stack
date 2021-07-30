@@ -4,9 +4,8 @@ const typeDefs = gql`
 
   type User {
     _id: ID!
-    username: String!
     firstName: String!
-    lastname: String!
+    lastName: String!
     email:String!
     password: String!
     createdAt: String
@@ -34,17 +33,9 @@ const typeDefs = gql`
   },
   
   type Mutation {
-    addUser(
-      username: String!,
-      firstName: String!,
-      lastname: String!,
-      email:String!,
-      password: String!,
-    ): Auth
-    login(
-      email: String!,
-      password: String!
-    ): Auth
+    addUser(firstName: String!,lastName: String!,email:String!,password: String!,): Auth
+    updateUser(firstName: String, lastName: String, email: String, password: String): User
+    login(email: String!,password: String!): Auth
   }
 `;
 

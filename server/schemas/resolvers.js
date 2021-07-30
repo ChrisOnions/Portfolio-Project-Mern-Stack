@@ -14,24 +14,31 @@ const resolvers = {
   },
 
   Mutation: {
-    addUser: async (_, { username, firstName, lastname, email, password }) => {
-      const user = await User.create({ username, firstName, lastname, email, password });
+    addUser: async (_, args) => {
+      const user = await User.create(args);
       const token = signToken(user);
       return { token, user };
+    },
+    updateUser: async (_, args, context) => {
+      if (context.user) {
+        return await User.findByIdAndUpdate(context.user._id, args, { new: true });
+      }
+      throw new AuthenticationError('Not logged in');
     },
     login: async (_, { email, password }) => {
       const user = await User.findOne({ email });
       if (!user) {
-        throw new AuthenticationError('Sorry Try Again');
+        throw new AuthenticationError('Incorrect credentials 1');
       }
       const correctPw = await user.isCorrectPassword(password);
       if (!correctPw) {
-        throw new AuthenticationError('Sorry Try Again');
+        throw new AuthenticationError('Incorrect credentials 2');
       }
       const token = signToken(user);
       return { token, user };
-    },
+    }
   }
 }
 
 module.exports = resolvers;
+
