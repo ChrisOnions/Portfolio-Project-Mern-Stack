@@ -1,13 +1,11 @@
 [
   {
-    "username": "Brian Kernighan",
     "firstName": "Brian",
     "lastName": "Kernighan",
     "email": "bkernighan@techfriends.dev",
     "password": "password01"
   },
   {
-    "username": "Max KanatAlexander",
     "firstName": "Max",
     "lastName": "KanatAlexander",
     "email": "mkanatalexander@techfriends.dev",
