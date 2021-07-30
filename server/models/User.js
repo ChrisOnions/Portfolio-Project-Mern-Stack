@@ -3,11 +3,6 @@ const bcrypt = require('bcrypt');
 
 const userSchema = new Schema(
   {
-    username: {
-      type: String,
-      required: true,
-      unique: true,
-    },
     firstName: {
       type: String,
       required: true,
@@ -34,12 +29,12 @@ const userSchema = new Schema(
       default: Date.now,
       get: (timestamp) => dateFormat(timestamp),
     },
-    listing: [
-      {
-        type: Schema.Types.ObjectId,
-        ref: 'Listing'
-      }
-    ]
+    // listing: [
+    //   {
+    //     type: Schema.Types.ObjectId,
+    //     ref: 'Listing'
+    //   }
+    // ]
   },
 );
 
