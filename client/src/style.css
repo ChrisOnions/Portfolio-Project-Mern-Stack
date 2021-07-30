@@ -1,0 +1,26 @@
+:root {
+  --header-footer-color: rgb(0, 54, 54);
+  --article-color1: rgb(1, 131, 131);
+  --article-color2: rgb(82, 136, 136);
+  --White-text: white;
+}
+.flex {
+  display: flex;
+}
+.between {
+  justify-content: space-between;
+}
+.white {
+  color: var(--White-text);
+}
+.col {
+  flex-direction: column;
+}
+
+/*
+var(--header-footer-color);
+var(--article-color1);
+var( --article-color2);
+var(--White-text);
+
+ */
