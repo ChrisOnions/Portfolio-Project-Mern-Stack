@@ -1,5 +1,6 @@
 const { Schema, model } = require('mongoose');
-const listingSchema = new Schema(
+
+const workOrder = new Schema(
   {
     user: {
       required: true,
@@ -13,12 +14,11 @@ const listingSchema = new Schema(
     problem: {
       type: String,
       required: true,
-      min: [10, 'Please Writhe the problem in detial'],
-      max: 12
+      min: [10, 'Please Writhe the problem in detail'],
+      max: 280,
     },
     statusOpen: {
       type: Boolean,
-      required: true,
       trim: true,
       setDefaultsOnInsert: true,
     },
@@ -35,6 +35,6 @@ const listingSchema = new Schema(
   }
 )
 
-const Listing = model('Listing', listingSchema);
+const workOrder = model('workOrder', workOrderSchema);
 
-module.exports = Listing;
+module.exports = workOrder;
