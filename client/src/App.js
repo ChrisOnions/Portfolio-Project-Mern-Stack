@@ -8,14 +8,19 @@ import {
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 
+
 import './normalize.css';
 import Home from './pages/home/Home';
 import Signup from './pages/signup/Signup';
 import Header from './components/navBar/navBar';
 import NoMatch from './pages/NoMatch';
 import Login from './pages/login/Login';
-// import Footer from './components/footer/footer.js'; 
-
+import Dashboard from './pages/dashboard/dashboard';
+import Maintenance from './pages/maintenance/maintenance'
+import Payment from './pages/payment/payment'
+import update from './pages//update/update'
+import Footer from './components/footer/footer.js';
+import settings from './pages/settings/settings'
 const httpLink = createHttpLink({
   uri: '/graphql',
 });
@@ -45,10 +50,15 @@ function App() {
             <Route exact path="/" component={Home} />
             <Route exact path="/signup" component={Signup} />
             <Route exact path="/login" component={Login} />
+            <Route exact path="/dashboard" component={Dashboard} />
+            <Route exact path="/maintenance" component={Maintenance} />
+            <Route exact path="/payment" component={Payment} />
+            <Route exact path="/update" component={update} />
+            <Route exact path="/settings" component={settings} />
             <Route component={NoMatch} />
           </Switch>
         </>
-        {/* <Footer /> */}
+        <Footer />
       </BrowserRouter>
 
     </ApolloProvider>
