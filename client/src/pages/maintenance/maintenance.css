@@ -1,0 +1,15 @@
+.button {
+  background-color: var(--article-color1);
+  border-radius: 4px;
+  padding: 5px 15px;
+  color: white;
+  border: none;
+  /* margin: 18px; */
+  text-decoration: none;
+  box-shadow: 5px 8px 6px -9px #000000;
+}
+#selectedItem {
+  font-weight: 700;
+  font-size: 30px;
+  color: orangered;
+}
