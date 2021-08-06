@@ -1,5 +1,6 @@
 const { Schema, model } = require('mongoose');
 const bcrypt = require('bcrypt');
+// const Workorder = require('./workorder')
 
 const userSchema = new Schema(
   {
@@ -29,12 +30,14 @@ const userSchema = new Schema(
       default: Date.now,
       get: (timestamp) => dateFormat(timestamp),
     },
-    // listing: [
-    //   {
-    //     type: Schema.Types.ObjectId,
-    //     ref: 'Listing'
-    //   }
-    // ]
+    workOrders: {
+      type: Schema.Types.ObjectId,
+      ref: 'Workorder',
+    },
+    listing: {
+      type: Schema.Types.ObjectId,
+      ref: 'Listing',
+    },
   },
 );
 

@@ -3,6 +3,7 @@ import { useMutation } from '@apollo/client';
 import { ADD_USER } from '../../utils/mutations.js';
 import Auth from '../../utils/auth';
 import './signup.css'
+import Button from '@material-ui/core/Button';
 
 
 export default function Signup() {
@@ -33,7 +34,7 @@ export default function Signup() {
 
   return (
     <div className="sizeContainer">
-      <div className="signupContainer">
+      <div className="signupContainer borderbox">
         <h1>Signup here</h1 >
 
         <form onSubmit={handleFormSubmit}>
@@ -83,9 +84,9 @@ export default function Signup() {
               onChange={handleChange}
             />
           </div>
-          <button type="submit">Sign Up</button>
+          <Button style={{ margin: "10px 0px" }} variant="contained" color="primary" aria-controls="simple-menu" aria-haspopup="true" type="submit">Sign Up</Button>
         </form>
-        <button href='/'>Back</button>
+        <Button style={{ margin: "10px 0px" }} variant="contained" color="primary" aria-controls="simple-menu" aria-haspopup="true" href='/'>Back</Button>
       </div>
     </div >
   );

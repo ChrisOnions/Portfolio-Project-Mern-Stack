@@ -16,8 +16,39 @@
 .col {
   flex-direction: column;
 }
+.margin-50 {
+  margin: 50px;
+}
+.margin-5 {
+  margin: 5px;
+}
+label {
+  margin: 10px 0;
+}
+.alignCenter {
+  text-align: center;
+}
+.TextField {
+  border: 1px black solid;
+}
+.smaller {
+  max-width: 400px;
+  max-height: 400px;
+}
+.text-black {
+  color: black;
+}
+.col {
+  flex-direction: column;
+}
+.center2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
-/*
+/* 
 var(--header-footer-color);
 var(--article-color1);
 var( --article-color2);

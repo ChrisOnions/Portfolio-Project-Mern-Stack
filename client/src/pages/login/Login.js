@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import { useMutation } from '@apollo/client';
 import { LOGIN } from '../../utils/mutations';
 import Auth from '../../utils/auth';
-
+import { Link } from "react-router-dom";
+import "../signup/signup.css"
+import Button from '@material-ui/core/Button';
 function Login() {
   const [formState, setFormState] = useState({ email: '', password: '' });
   const [login, { error }] = useMutation(LOGIN);
@@ -36,7 +38,7 @@ function Login() {
 
   return (
     <div className="sizeContainer">
-      <div className="signupContainer">
+      <div className="signupContainer borderbox">
         <h1>Login</h1 >
         <form
           className='formSignup'
@@ -67,11 +69,12 @@ function Login() {
               <p className="error-text">The provided credentials are incorrect</p>
             </div>
           ) : null}
-          <button type="submit" >Sign in</button>
+          <Button variant="contained" color="primary" aria-controls="simple-menu" aria-haspopup="true" type="submit" >Login</Button>
 
         </form>
-        <h3></h3>
-        <button href='/Signup'>Signup</button>
+        <br></br>
+        <div className="noticeText">No account Signup here</div>
+        <Link color="primary" className="button" to="/signup">Signup</Link>
 
       </div>
     </div >

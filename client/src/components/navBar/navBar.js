@@ -14,7 +14,7 @@ export default function Header() {
       <div>
         {Auth.loggedIn() ? <Dropdown /> :
           <Link className='buttonNav' to="/login" >
-            SIGN IN
+            LOGIN
           </Link>}
 
       </div>

@@ -28,11 +28,6 @@ const listingSchema = new Schema(
       required: true,
       trim: true
     },
-    price: {
-      type: Number,
-      required: true,
-      trim: true
-    },
     forSale: {
       type: Boolean,
     },

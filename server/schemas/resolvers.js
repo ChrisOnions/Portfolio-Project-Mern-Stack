@@ -1,5 +1,5 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User, Listing } = require('../models');
+const { User, Listing, Workorder, Category } = require('../models');
 const { signToken } = require('../utils/auth');
 // jsonwebtoken
 
@@ -10,9 +10,15 @@ const resolvers = {
     },
     getlistings: async () => {
       return await Listing.find({})
-    }
+    },
+    WorkOrders: async () => {
+      return await Workorder.find({})
+    },
+    getCategory: async () => {
+      console.log('GetCategory', 'Doot')
+      return await Category.find({})
+    },
   },
-
   Mutation: {
     addUser: async (_, args) => {
       const user = await User.create(args);
@@ -36,9 +42,34 @@ const resolvers = {
       }
       const token = signToken(user);
       return { token, user };
+    },
+    addWorkOrder: async (_, args) => {
+
+      const { category, problem, reply, statusOpen } = args;
+      const workOrder = await Workorder.create({ category, problem, reply, statusOpen })
+      return workOrder;
+    },
+    updateWorkOrder: async (_, { _id, statusOpen, handledBy, workerComments }) => {
+      console.log('updateWorkOrder', 'Doot')
+      return await Workorder.findOneAndUpdate(
+        { _id: _id },
+        {
+          statusOpen,
+          handledBy,
+          workerComments
+        },
+      )
+    },
+    removeWorkOrder: async (_, { _id }) => {
+      const order = await Workorder.findOneAndDelete(
+        {
+          _id: _id
+        }
+      );
+      return "Work-Order Deleted"
     }
   }
 }
-
 module.exports = resolvers;
-
+// (parent, args, ctx, info)
+// parent, args, context, info

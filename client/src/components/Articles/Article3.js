@@ -9,28 +9,22 @@ export default function Article3() {
 
       <article>
         <div className='articleTitle listItemsDescription'>Were here to help</div>
-
-        <ul>
-          <a href='/signup' className='listItems'>Live Chat</a>
-
-          <img className='img' src={logo} alt="logo missing" />
-          <br></br>
-          <a href='/' className='listItems'> Call us on : 0402825610 </a>
-          <img className='img' src={logo} alt="logo missing" />
-          <br></br>
-          <a href='/' className='listItems'>Email : c.onions101@gmail.com</a>
-          <img className='img' src={logo} alt="logo missing" />
-          <br></br>
-          <a href='/' className='listItems'>Request a call back</a>
-          <img className='img' src={logo} alt="logo missing" />
-          <br></br>
-
-
-
-        </ul>
-
-
-
+        <div className="largeCenter">
+          <ul>
+            <a href='/signup' className='listItems'>Chat</a>
+            <img className='img' src={logo} alt="logo missing" />
+            <br></br>
+            <a href='/' className='listItems'> Call us on : 1300 Rental-Man </a>
+            <img className='img' src={logo} alt="logo missing" />
+            <br></br>
+            <a href='/' className='listItems'>Email : RenMan@rent.com</a>
+            <img className='img' src={logo} alt="logo missing" />
+            <br></br>
+            <a href='/' className='listItems'>Request a call back</a>
+            <img className='img' src={logo} alt="logo missing" />
+            <br></br>
+          </ul>
+        </div>
       </article>
     </div>
   );

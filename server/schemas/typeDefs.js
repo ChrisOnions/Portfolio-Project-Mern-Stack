@@ -23,11 +23,17 @@ const typeDefs = gql`
     createdAt: String
   },
 
+  type Category{
+    name: String
+  },
+
   type WorkOrder {
     _id: ID!
+    date: String
     user: User!
-    date: String!
+    category:String!
     problem: String!
+    reply: Boolean!
     statusOpen: Boolean
     handledBy: String
     workerComments: String
@@ -40,17 +46,18 @@ const typeDefs = gql`
   type Query {
     getUsers: [User]
     getlistings: [Listing]
-    getWorkOrder: [WorkOrder]
+    WorkOrders: [WorkOrder]
+    getCategory: [Category]
   },
   
   type Mutation {
-    addUser(firstName: String!,lastName: String!,email:String!,password: String!,): Auth
-
+    addUser(firstName: String!, lastName: String!, email:String!, password: String!): Auth
     updateUser(firstName: String, lastName: String, email: String, password: String): User
 
-    addWorkOrder(user: User, date: String ,problem: String)
+    addWorkOrder(category: String, problem: String reply:Boolean, statusOpen: Boolean): WorkOrder
+    updateWorkOrder(_id: ID!, statusOpen: Boolean, handledBy: String, workerComments: String ): WorkOrder
 
-    updateWorkOrder(statusOpen: Boolean, handledBy: String, workerComments: String)
+    removeWorkOrder(_id:ID!): String
 
     login(email: String!,password: String!): Auth
   }

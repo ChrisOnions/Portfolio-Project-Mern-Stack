@@ -13,21 +13,25 @@ body {
   background-color: var(--header-footer-color);
   color: var(--White-text);
 }
+.space {
+  margin: 15px;
+}
+
 .iconContainer {
   color: var(--White-text);
   text-decoration: none;
   width: 100%;
-  padding: 10px 0;
+  font-size: 25px;
+
+  align-content: center;
 }
 .iconManagement {
   font-weight: bold;
   size: 150%;
   letter-spacing: 3px;
+  align-content: center;
 }
-.MuiButton-label {
-  color: var(--White-text);
-  transition-duration: 0.4s;
-}
+
 .buttonNav {
   background-color: var(--article-color1);
   border-radius: 10px;

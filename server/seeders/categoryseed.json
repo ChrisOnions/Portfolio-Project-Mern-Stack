@@ -1,0 +1,22 @@
+[
+  { "name": "Blocked Toilet" },
+  { "name": "water leak" },
+  { "name": "Eletrical outage / fault" },
+  { "name": "Pest control" },
+  { "name": "Faulty door locks" },
+  { "name": "Dripping taps " },
+  { "name": "Loose or broken door handles" },
+  { "name": "Leaking roofs" },
+  { "name": "Hot waster / pilot light" },
+  { "name": "Blocked drain" },
+  { "name": "Air conditioning issues" },
+  { "name": "Diswasher fault" },
+  { "name": "Curtains or blinds" },
+  { "name": "Carpets / flooring dammage" },
+  { "name": "Celing / Wall Crack" },
+  { "name": "A damaged letter box" },
+  { "name": "Garden issues" },
+  { "name": "Other urgent" },
+  { "name": "Other Non-urgent" },
+  { "name": "Other" }
+]

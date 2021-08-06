@@ -1,15 +1,17 @@
 const { Schema, model } = require('mongoose');
 
-const workOrder = new Schema(
+const workOrderSchema = new Schema(
   {
-    user: {
-      required: true,
-      trim: true
-    },
     date: {
       type: Date,
       default: Date.now,
       get: (timestamp) => dateFormat(timestamp),
+    },
+    category: {
+      type: String,
+      required: true,
+      min: [10, 'Please Writhe the problem in detail'],
+      max: 280,
     },
     problem: {
       type: String,
@@ -17,10 +19,13 @@ const workOrder = new Schema(
       min: [10, 'Please Writhe the problem in detail'],
       max: 280,
     },
+    reply: {
+      type: Boolean,
+      required: true,
+    },
     statusOpen: {
       type: Boolean,
-      trim: true,
-      setDefaultsOnInsert: true,
+      default: true
     },
     handledBy: {
       type: String,
@@ -34,7 +39,6 @@ const workOrder = new Schema(
     },
   }
 )
+const Workorder = model('workorder', workOrderSchema);
 
-const workOrder = model('workOrder', workOrderSchema);
-
-module.exports = workOrder;
+module.exports = Workorder
