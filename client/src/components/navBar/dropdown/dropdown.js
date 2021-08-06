@@ -41,11 +41,12 @@ export default function SimpleMenu() {
   };
 
   return (
-    <div>
-      <Button className='white' aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
+    <div style={{ marginRight: "20px" }}>
+      <Button variant="contained" color="primary" aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
         Menu
       </Button>
       <Menu
+
         id="simple-menu"
         anchorEl={anchorEl}
         keepMounted
@@ -53,14 +54,15 @@ export default function SimpleMenu() {
         onClose={handleClose}
       >
         <MenuItem onClick={handleClose}><Link to="/">Home</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link to="/search">Search</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link to="/dashboard">DashBoard</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link to="/settings">Settings</Link></MenuItem>
         <MenuItem onClick={handleCloseLogout}><Link to="/">Logout</Link></MenuItem>
 
       </Menu>
       <Snackbar
         anchorOrigin={{
           vertical: 'top',
-          horizontal: 'centre',
+          horizontal: 'center',
         }}
         open={open}
         autoHideDuration={6000}
