@@ -23,27 +23,27 @@
     "workerComments": "Seems a rodent has chewed though some cables needs to be replaced"
   },
   {
-    "category": "Roof Colapse",
-    "problem": "The next door neighbours tree flee off and blew into the kitchen through the roof the ses patched the hole but we need seriouse repairs",
+    "category": "A damaged letter box",
+    "problem": "Someone blew up our letterbox and now its in pieces.",
     "reply": true,
     "statusOpen": true,
     "handledBy": "BES Roofing Specialiasts ",
     "workerComments": "Work has started should be able to move back in on the 12th of this month"
   },
   {
-    "category": "Roof Colapse",
-    "problem": "The next door neighbours tree flee off and blew into the kitchen through the roof the ses patched the hole but we need seriouse repairs",
+    "category": "Hot waster / pilot light",
+    "problem": "Not sure whats wrong with the Hot waster / pilot light ",
     "reply": true,
     "statusOpen": false,
     "handledBy": "BES Roofing Specialiasts ",
     "workerComments": "Work has started should be able to move back in on the 12th of this month"
   },
   {
-    "category": "Roof Colapse",
+    "category": "Cont- Roof Colapse",
     "problem": "The next door neighbours tree flee off and blew into the kitchen through the roof the ses patched the hole but we need seriouse repairs",
     "reply": true,
     "statusOpen": false,
     "handledBy": "BES Roofing Specialiasts ",
-    "workerComments": "Work has started should be able to move back in on the 12th of this month"
+    "workerComments": "Work has been completed"
   }
 ]
