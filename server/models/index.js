@@ -1,5 +1,5 @@
-const User = require('./user.js');
-const Listing = require('./listing.js')
-const Category = require('./category.js')
-const Workorder = require('./workorder.js')
+const User = require('./user');
+const Listing = require('./listing')
+const Category = require('./category')
+const Workorder = require('./workorder')
 module.exports = { User, Listing, Category, Workorder };
