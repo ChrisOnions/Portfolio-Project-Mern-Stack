@@ -90,10 +90,14 @@ For making testing use:
 
 # Pictures
 
-![Insert  text here](./Assets/home.screen.jpg)
-![Homepage pic](./Assets//home.screen-mobil.png)
+![Full Size image of website homepage](./Assets/homescreen.JPG)
+![Mobile image of website homepage](./Assets//homescreen-mobil.png)
 
 # Future-Dev-Plans
+
+The vision for the app is to be able to make the real estate agents obsolete and give more control to tenants and landlords.
+I am aiming to create a company that manages all aspects of residential real estate in an efficient way.
+This app will also have the ability to collect property data for future uses and expansion.
 
 # Collaborators
 
