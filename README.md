@@ -1,98 +1,100 @@
-# Mern Stack Setup
+# Allied Property Management
 
-## Git init
+![Licence](https://img.shields.io/badge/Licence-MIT-yellow)
+![Grade](https://img.shields.io/badge/Grade-A%2B-blue)
+![Build](https://img.shields.io/badge/Build-Pass-green)
 
-- echo "# Portfolio-Project-Mern-Stack" >> README.md
-- git init
-- git add README.md
-- git commit -m "first commit"
-- git branch -M main
-- git remote add origin https://github.com/ChrisOnions/Portfolio-Project-Mern-Stack.git
-- git push -u origin main
+## Table of contents
 
----
+[Install Instructions](#Install)
 
-## Create app
+[Links](#Links)
 
-- npx create-react-app mern-stack-portfolio-project
-- cd mern-stack-portfolio-project
-- npm start
-- Delete Source object
+[Aim](#Aim)
 
-## init npm
+[Prerequisites](#Prerequisites)
 
--- npm init
+[Collaborators](#collaborators)
 
-## Dependencies
+[Install Guide](#Install)
 
-## front end
+[Pictures](#Pictures)
 
-- npm install react-router-dom --save
+[Future Dev](#Future-Dev-Plans)
 
-## backened
+# Links
 
-- express mongoose dotenv
+- [GitHub Repository](https://github.com/ChrisOnions/Portfolio-Project-Mern-Stack)
 
-- concurrently
-- bcrypt
-- jsonwebtoken
+- [Deployed on heroku](https://property-management-appl.herokuapp.com/)
 
-with apollo/graph use graphql apollo-server-express
+# Aim
 
-# Scripts
+Real estate agents are inundated with communication from Landlords and tenants in regards to the management of properties within their portfolio
 
-## concurently run .
+In particular, requests for property maintenance make up a large portion of correspondence received by agents which creates a bottleneck of issues leading to frustration from tenants and a flow-on effect to landlords and contractors
 
-```json
-   "start": "node server/server.js",
-   "develop": "concurrently \"cd server && npm run watch\" \"cd client &&  npm start\"",
-   "install": "cd server && npm i && cd ../client && npm i",
-   "seed": "cd server && npm run seed",
-   "build": "cd client && npm run build"
+I propose creating an application where tenants can be directly linked to a team that manages maintenance requests, rent payments and routine property inspections on behalf of real estate agents in an effort to free up their time to take care of high level tasks
+
+This solution will alleviate the frustration experienced by tenants who constantly have long wait times receiving attention for their maintenance issues and aims to prevent high costs passed on to landlords by not addressing maintenance issues immediately or preventing them entirely.
+
+## User story
+
+As a user - who is renting a property.
+
+I want to - be able to log maintenance requests, pay rent and book inspections with ease .
+
+So that - I can have maintenance requests dealt with promptly, communicate with contractors directly and have more control over the way my property is managed.
+
+# Prerequisites
+
+- Javascript
+- React
+- Express
+- Node.js
+- NPM
+- MySql
+- My Sql Workbench
+
+# Install
+
+<span style="color:green">Clone Repository</span> - (From github Repository)
+
+<span style="color:green">NPM i</span> - (To install all required packages from package.json)
+
+<span style="color:green">Create file .env </span> - (From github Repository)
+
+## Env file Template
+
+```.env
+DB_NAME=RealestateApp
+DB_PASSWORD= 'Password Goes HERE'
+DB_USER= "userPassword"
 ```
 
-## client
+<span style="color:green">Create Db</span> - (mongoDB)
 
-```json
-   "start": "react-scripts start",
-   "build": "react-scripts build",
-   "test": "react-scripts test",
-   "eject": "react-scripts eject"
-```
+## Mongo seed schema
 
-## Server
+<span style="color:green">npm run seed</span> - (mongoDB database)
 
-```json
-   "start": "node server.js",
-   "watch": "nodemon server.js"
-```
+<span style="color:green">npm run develop</span> - (Starts program)
 
-# Folder Structure
+<span style="color:green">Visist http://localhost:3001/</span> - (Or change PORT)
 
-- app
+For making testing use:
 
-  - Client
-    - react-app
-  - Server
+<span style="color:green">Visist http://localhost:3000/graphql</span> - (Or change PORT)
 
-  axios--npm package. -- "proxy": "http://localhost:3001",
+<span style="color:green">Use postman/insomnia to test routes</span> - (Useage)
 
-  react
+# Pictures
 
-<!--
-Create user login with all the trimmings
-Make home look pretty
+![Insert  text here](./Assets/home.screen.jpg)
+![Homepage pic](./Assets//home.screen-mobil.png)
 
-Signup page
-Login page
-Logout page
-Auth
+# Future-Dev-Plans
 
-Create Listings backend
+# Collaborators
 
-seed for listings
-
-
-// const stripe = require('stripe') for donations
-// ('sk_test_4eC39HqLyjWDarjtT1zdp7dc'); test
- -->
+If you would like to colaborate on this project or would like to know more please see my contacts for information oh how to reach me.
