@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import DashboardIcon from '@material-ui/icons/Dashboard';
 import './footer.css'
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/styles';
 import SettingsIcon from '@material-ui/icons/Settings';
 import PhoneCallbackIcon from '@material-ui/icons/PhoneCallback';
 import HomeIcon from '@material-ui/icons/Home';
@@ -22,7 +22,7 @@ export default function Footer() {
     }
   });
   const classes = useStyles();
-  const [value, setValue] = React.useState('recents');
+  const [value, setValue] = useState('recents');
 
   const handleChange = (event, newValue) => {
     setValue(newValue);

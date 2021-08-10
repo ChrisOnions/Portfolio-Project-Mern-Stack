@@ -14,11 +14,11 @@ export default function Article() {
             <ul>
               <li className='listItems'><span className="dot">1</span>Check Out Our Rates</li>
               <div className='underText'>See if Property Management is right for you</div>
-              <li className='listItems'><span class="dot">2</span>Sign Up</li>
+              <li className='listItems'><span className="dot">2</span>Sign Up</li>
               <div className='underText'>Signup is quick and simple </div>
-              <li className='listItems'><span class="dot">3</span>Choose A Plan</li>
+              <li className='listItems'><span className="dot">3</span>Choose A Plan</li>
               <div className='underText'>Add your properties</div>
-              <li className='listItems'><span class="dot">4</span>We do the rest</li>
+              <li className='listItems'><span className="dot">4</span>We do the rest</li>
               <div className='underText'>It's that simple! </div>
             </ul>
             {Auth.loggedIn() ? <> </> :
