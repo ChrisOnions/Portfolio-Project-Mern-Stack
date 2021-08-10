@@ -35,7 +35,7 @@ export default function Signup() {
   return (
     <div className="sizeContainer">
       <div className="signupContainer borderbox">
-        <h1>Signup here</h1 >
+        <h1>Create Your Account</h1 >
 
         <form onSubmit={handleFormSubmit}>
           <div className='flex col'>

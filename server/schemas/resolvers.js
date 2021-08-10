@@ -50,7 +50,6 @@ const resolvers = {
       return workOrder;
     },
     updateWorkOrder: async (_, { _id, statusOpen, handledBy, workerComments }) => {
-      console.log('updateWorkOrder', 'Doot')
       return await Workorder.findOneAndUpdate(
         { _id: _id },
         {

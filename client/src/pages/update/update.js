@@ -43,13 +43,13 @@ export default function Update(props) {
   return (
     <div className="sizeContainer">
       <div className='margin-50'>
-        <h1>Maintance Update</h1 >
+        <h1>Maintenance Update</h1 >
         <form className='formSignup'
           onSubmit={handleFormSubmit}
         ><div className='flex col'>
-            <label>Referance item:  </label>
+            <label>Reference item:  </label>
             <h3 style={{ padding: '10px 0', textDecoration: "underline" }}>{problem}</h3>
-            <label>Submitted By </label>
+            <label>Submitted By: </label>
             <TextField
               name="handledBy"
               id="outlined-multiline-static"
@@ -59,7 +59,7 @@ export default function Update(props) {
               variant="outlined"
               onChange={handleChange}
             />
-            <label>Worker Comments</label>
+            <label>Worker Comments:</label>
             <TextField
               name="workerComments"
               id="outlined-multiline-static"
@@ -70,7 +70,7 @@ export default function Update(props) {
               onChange={handleChange}
             />
           </div>
-
+          <br></br>
           <Button size="large" variant='outlined' color='primary' onClick={handleFormSubmit}>Submit</Button>
         </form>
       </div>

@@ -8,14 +8,14 @@ export default function Article2() {
     <div className="articleContainer2">
       <article>
         <div>
-          <div className='articleTitle listItemsDescription'>Australias Number #1 Rental property management system</div>
+          <div className='articleTitle listItemsDescription'>Australia's Number #1 Rental Property Management System</div>
           <ul>
-            <li className='listItemsDescription'>10+ million Homes Managed by us on a weekly basis</li>
-            <li className='listItemsDescription'>no need for Realestate agents we do it all here </li>
-            <li className='listItemsDescription'>Self managge though the app</li>
-            <li className='listItemsDescription'>Request inspections from one of our Representatives </li>
-            <li className='listItemsDescription'>Book in maintanance though the 24 hour call center</li>
-            <li className='listItemsDescription'>Emergancy maintanace We got you covered </li>
+            <li className='listItemsDescription'>10+ million homes managed by us on a weekly basis</li>
+            <li className='listItemsDescription'>No need for realestate agents - We do it all here!</li>
+            <li className='listItemsDescription'>Self manage though the app</li>
+            <li className='listItemsDescription'>Request inspections from one of our representatives </li>
+            <li className='listItemsDescription'>Book in maintanance through the 24 hour Call Centre</li>
+            <li className='listItemsDescription'>Emergancy maintenance - We got you covered! </li>
           </ul>
           {Auth.loggedIn() ? <> </> :
             <div className="flex  center" >

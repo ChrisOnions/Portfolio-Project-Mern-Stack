@@ -8,6 +8,7 @@ const workOrderSeed = require('./workOrderSeeds.json');
 
 function seedDB() {
   db.once('open', async () => {
+    console.log("here");
     try {
       await User.deleteMany({});
       await Listing.deleteMany({});
@@ -29,5 +30,7 @@ function seedDB() {
       process.exit(1);
     }
   });
+
 }
+seedDB();
 module.exports = seedDB;

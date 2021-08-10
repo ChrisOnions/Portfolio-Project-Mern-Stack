@@ -6,7 +6,7 @@ export default function icon() {
     <div className='flex space'>
       <img className='iconLogo' src={logo} alt="Logo" />
       <a className='iconContainer' href="/">
-        Property
+        Allied Property
         <span className='iconManagement'> Management</span>
       </a>
     </div>

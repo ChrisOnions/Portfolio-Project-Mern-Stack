@@ -70,9 +70,9 @@ export default function Dashboard() {
       <section className="cards"> {/*insert login name here */}
         <div>
           <div className="card  card-title flex" >
-            <h2 className='card-title '>Submit a Maintanace Request</h2>
+            <h2 className='card-title '>Submit a maintenance Request</h2>
             <div className='seperator margin-10'></div>
-            <div>Submit all urgent and non-urgent maintanace requests here.</div>
+            <div>Submit all urgent and non-urgent maintenance requests here.</div>
             <Link className='link' to="/maintenance" >Click Here </Link>
           </div>
         </div>
@@ -81,7 +81,7 @@ export default function Dashboard() {
           <div className="card card-title flex">
             <h2 className='card-title'>Pay Your Rent</h2>
             <div className='seperator margin-10'></div>
-            <div> All payments full or installments are to be finalised by the due date.</div>
+            <div> All monthly rental payments to be made in full by the due date.</div>
             <Link className='link' to="/Payment" >Click Here </Link>
           </div>
         </div>
@@ -89,8 +89,8 @@ export default function Dashboard() {
           <div className="card card-title flex">
             <h2 className='card-title '>Book a Property Inspection </h2>
             <div className='seperator margin-10'></div>
-            <div>Take the hassle out of quartly inspections by booking yours today with our online tool. Choose a date and we do the rest.</div>
-            <Link className='link' to="/login" >Click Here </Link>
+            <div>Book quarterly inspection. Choose a date and we do the rest.</div>
+            <Link className='link' to="/calendar" >Click Here </Link>
           </div>
         </div>
         <div className='flex'>
@@ -99,14 +99,14 @@ export default function Dashboard() {
               Request a Call Back</h2>
             <div className='seperator margin-10'></div>
             <div>Request a call back from one of our property specialists. </div>
-            <Link className='link' to="/login" >Click Here </Link>
+            <Link className='link' to="/callback" >Click Here </Link>
 
           </div>
         </div>
 
       </section>
       <div >
-        <h1 className='maintanceHeader'>Maintanace Request Status </h1>
+        <h1 className='maintanceHeader'>Maintenance Requests </h1>
         {loading ? (<div>Loading...</div>
         ) : Workorders.map((Workorder) => (
           <div key={Workorder._id} className="">
@@ -182,7 +182,7 @@ export default function Dashboard() {
           aria-labelledby="alert-dialog-title"
           aria-describedby="alert-dialog-description"
         >
-          <DialogTitle id="alert-dialog-title">{" Maintance Request has been deleted!"}</DialogTitle>
+          <DialogTitle id="alert-dialog-title">{" Maintenance request has been deleted!"}</DialogTitle>
           <DialogContent>
 
           </DialogContent>

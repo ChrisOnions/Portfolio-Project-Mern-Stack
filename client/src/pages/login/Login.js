@@ -5,6 +5,7 @@ import Auth from '../../utils/auth';
 import { Link } from "react-router-dom";
 import "../signup/signup.css"
 import Button from '@material-ui/core/Button';
+
 function Login() {
   const [formState, setFormState] = useState({ email: '', password: '' });
   const [login, { error }] = useMutation(LOGIN);
@@ -73,8 +74,11 @@ function Login() {
 
         </form>
         <br></br>
-        <div className="noticeText">No account Signup here</div>
-        <Link color="primary" className="button" to="/signup">Signup</Link>
+        <div className="noticeText">No account? Create an account here. </div>
+
+        <div> <Link color="primary" className="button" to="/signup">SIGN UP </Link></div>
+
+
 
       </div>
     </div >

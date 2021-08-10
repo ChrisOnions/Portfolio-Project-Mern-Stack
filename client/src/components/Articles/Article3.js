@@ -8,16 +8,16 @@ export default function Article3() {
     <div className="articleContainer3">
 
       <article>
-        <div className='articleTitle listItemsDescription'>Were here to help</div>
+        <div className='articleTitle listItemsDescription'>We're here to help</div>
         <div className="largeCenter">
           <ul>
             <a href='/signup' className='listItems'>Chat</a>
             <img className='img' src={logo} alt="logo missing" />
             <br></br>
-            <a href='/' className='listItems'> Call us on : 1300 Rental-Man </a>
+            <a href='/' className='listItems'> Call us on: 1300 RENTAL-MAN </a>
             <img className='img' src={logo} alt="logo missing" />
             <br></br>
-            <a href='/' className='listItems'>Email : RenMan@rent.com</a>
+            <a href='/' className='listItems'>Email: info@rentalman.com</a>
             <img className='img' src={logo} alt="logo missing" />
             <br></br>
             <a href='/' className='listItems'>Request a call back</a>

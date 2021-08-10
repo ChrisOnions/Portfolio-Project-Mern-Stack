@@ -29,7 +29,7 @@ export default function Footer() {
   }
   return (
     <footer className=" flex container center">
-      <div className="margin-5">
+      <div className="margin-5 center">
         {auth.loggedIn() ?
           <BottomNavigation value={value} onChange={handleChange} className={classes.root}>
             <BottomNavigationAction className={classes.button} href='/' label="home" value="home" icon={<HomeIcon className={classes.button} />} />

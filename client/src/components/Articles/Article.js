@@ -12,18 +12,18 @@ export default function Article() {
           <article className=" " >
             <div className='articleTitle'>How we work</div>
             <ul>
-              <li className='listItems'><span className="dot">1</span>Check out our Rates</li>
-              <div className='underText'>See if Property management is right for you</div>
-              <li className='listItems'><span class="dot">2</span>Sign up</li>
+              <li className='listItems'><span className="dot">1</span>Check Out Our Rates</li>
+              <div className='underText'>See if Property Management is right for you</div>
+              <li className='listItems'><span class="dot">2</span>Sign Up</li>
               <div className='underText'>Signup is quick and simple </div>
-              <li className='listItems'><span class="dot">3</span>Choose A plan</li>
-              <div className='underText'>Add Your properties</div>
+              <li className='listItems'><span class="dot">3</span>Choose A Plan</li>
+              <div className='underText'>Add your properties</div>
               <li className='listItems'><span class="dot">4</span>We do the rest</li>
-              <div className='underText'>Its that simple </div>
+              <div className='underText'>It's that simple! </div>
             </ul>
             {Auth.loggedIn() ? <> </> :
-              <div className="flex  center">
-                <Button className='buttonStart' variant="contained" color="primary" aria-controls="simple-menu" aria-haspopup="true" href="/SignUp" >Get Started</Button></div>}
+              <div className="flex">
+                <Button style={{ marginLeft: "50px" }} className='buttonStart' variant="contained" color="primary" aria-controls="simple-menu" aria-haspopup="true" href="/SignUp" >Get Started</Button></div>}
 
           </article>
 

@@ -20,7 +20,7 @@ import Maintenance from './pages/maintenance/maintenance'
 import Payment from './pages/payment/payment'
 import update from './pages//update/update'
 import Footer from './components/footer/footer.js';
-import settings from './pages/settings/settings'
+import calendar from './pages/calendar/calendar'
 const httpLink = createHttpLink({
   uri: '/graphql',
 });
@@ -54,7 +54,7 @@ function App() {
             <Route exact path="/maintenance" component={Maintenance} />
             <Route exact path="/payment" component={Payment} />
             <Route exact path="/update" component={update} />
-            <Route exact path="/settings" component={settings} />
+            <Route exact path="/calendar" component={calendar} />
             <Route component={NoMatch} />
           </Switch>
         </>

@@ -41,6 +41,9 @@ label {
 .col {
   flex-direction: column;
 }
+#displayDiv {
+  color: red;
+}
 .center2 {
   display: block;
   margin-left: auto;
