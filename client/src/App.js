@@ -19,7 +19,7 @@ import Dashboard from './pages/dashboard/dashboard';
 import Maintenance from './pages/maintenance/maintenance'
 import Payment from './pages/payment/payment'
 import update from './pages//update/update'
-import Footer from './components/footer/footer.js';
+// import Footer from './components/footer/footer.js';
 import calendar from './pages/calendar/calendar'
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -58,7 +58,7 @@ function App() {
             <Route component={NoMatch} />
           </Switch>
         </>
-        <Footer />
+        {/* <Footer /> */}
       </BrowserRouter>
 
     </ApolloProvider>
